@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muse Survey</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1 id="title">Muse Indonesia Survey</h1>
+    <p class="description">Isilah Survey dibawah ini untuk melihat anime terbaik</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Nama
+        </label>
+        <input type="text" id="name" placeholder="Masukkan Nama..." required>
+        <label for="email" id="email-label">
+            Email
+        </label>
+        <input type="email" name="email" id="email" placeholder="Masukan Email..." required>
+        <label for="number" id="number-label">
+            Umur(Optional)
+        </label>
+        <input type="number" name="number" id="number" min="12" max="50" placeholder="Berapa umur anda?..." >
+        <label for="dropdown" id="dropdown-label">
+            Seberapa Tau anda Dengan Muse Indonesia?
+            <select id="dropdown">
+                <option>Test 1</option>
+                <option>Test 2</option>
+            </select>
+        </label>
+
+        <label for="member" id="member-label"> Apa anime Favorite mu? </label>
+
+        <input type="radio" name="member" value="1" checked /> Naruto <br />
+        <input type="radio" name="member" value="2" /> One Piece <br />
+        <input type="radio" name="member" value="3" /> Jujutsu Kaisen <br />
+        <input type="radio" name="member" value="4" /> God of Highschool <br />
+        <input type="radio" name="member" value="5" /> Noblesee <br />
+        <input type="radio" name="member" value="6" /> Pokemon <br />
+        <input type="radio" name="member" value="7" /> Kimetsu No Yaiba <br />
+    
+
+    <br /><br />
+        <label for="movie" id="movie-label"> Apa saja movie favoritmu? </label>
+
+        <input type="checkbox" value="kimetsu-no-yaiba" /> Kimetsu No Yaiba <br />
+        <input type="checkbox" value="pokemon" /> Pokemon <br />
+        <input type="checkbox" value="one-piece" /> One Piece <br />
+        <input type="checkbox" value="naruto" /> Naruto <br />
+
+        <br /><br />
+
+        <label for="comments" id="comments-label">
+            apakah ada komentar?
+            <textarea id="comments" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+        </form>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
